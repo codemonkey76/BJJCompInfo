@@ -1,0 +1,12 @@
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe.config
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.pdb
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.csprojResolveAssemblyReference.cache
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.Form1.resources
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.Properties.Resources.resources
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.csproj.GenerateResource.Cache
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.csproj.CoreCompileInputs.cache
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.exe
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\obj\Debug\BJJCompetitionInfo.pdb
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Shane Poppleton\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\Newtonsoft.Json.xml
