@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="14.4.1" version="14.4.1" Modules="simple" RootPath="." Language="en" Id="{38637473-98F1-4069-94E6-DCCA49782FEF}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="14.4.1" version="14.4.1" Modules="simple" RootPath="." Language="en" Id="{0E4CB6A8-2A19-4195-999D-F688FF0B6ECC}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;DigCertStoreComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiAssemblyComponent;MsiClassComponent;MsiOdbcDataSrcComponent;MsiServInstComponent;MsiOrgComponent;MsiExtComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;TilesComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
   </COMPONENT>
@@ -9,13 +9,13 @@
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="Shane Poppleton"/>
-    <ROW Property="ProductCode" Value="1033:{ED0156D5-1637-4DD0-A1C1-584F488B0DF8} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{10D6F24C-D7B9-4CA8-8975-1CA4DD4C5746} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="BJJCompInfo"/>
     <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
-    <ROW Property="UpgradeCode" Value="{531096AD-5AB8-4F49-A06D-7C4F7C4F08B3}"/>
+    <ROW Property="UpgradeCode" Value="{066BA0EC-0057-473A-BEAC-269244A84356}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
@@ -32,44 +32,44 @@
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="BJJCompetitionInfo.exe" ComponentId="{6837AC73-A4F5-4688-A2A1-6F8664DDAD77}" Directory_="APPDIR" Attributes="0" KeyPath="BJJCompetitionInfo.exe"/>
-    <ROW Component="BJJCompetitionInfo.exe.config" ComponentId="{13654419-2628-42DF-9298-635C6D242EB4}" Directory_="APPDIR" Attributes="0" KeyPath="BJJCompetitionInfo.exe.config" Type="0"/>
-    <ROW Component="Microsoft.CSharp.dll" ComponentId="{7BBEB6E1-0479-4123-AE53-7BF7B648EC1B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
-    <ROW Component="Newtonsoft.Json.dll" ComponentId="{F4A6908A-4A06-4391-9545-8B3EFCC98098}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
-    <ROW Component="ProductInformation" ComponentId="{68EE65A9-638B-4131-9B66-3411BB4FDE8D}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="SHORTCUTDIR" ComponentId="{498649F5-24D3-4C6B-A377-1EF483A656C4}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="System.Core.dll" ComponentId="{16642CD9-683D-4F49-934D-AF9EB1480EDB}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
-    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{2156BC4D-B418-4586-9AD9-2295CA8D8B33}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
-    <ROW Component="System.Data.dll" ComponentId="{07EE95B7-421A-4B1F-B8FA-CFD6ABFB55E2}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
-    <ROW Component="System.Deployment.dll" ComponentId="{4708DDCB-A404-47C9-BFA1-6F544CDD82F4}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
-    <ROW Component="System.Drawing.dll" ComponentId="{413DD735-D6A5-4858-A548-A5F67A9BC63C}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
-    <ROW Component="System.Net.Http.dll" ComponentId="{6F59C12B-BAF0-4BE3-A14B-9E61625D06D9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
-    <ROW Component="System.Windows.Forms.dll" ComponentId="{A2CC2EC7-3AE6-44A6-AFFB-9924C78E7965}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
-    <ROW Component="System.Xml.Linq.dll" ComponentId="{92F39483-152B-4C01-81AB-D94F45F2E72E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
-    <ROW Component="System.Xml.dll" ComponentId="{59CC8ABC-56D9-4FE9-8361-E82FC2507E74}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
-    <ROW Component="System.dll" ComponentId="{005A62C5-80E9-45D2-88BF-81C559917220}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
-    <ROW Component="mscorlib.dll" ComponentId="{BF1FCC30-FAB1-4D54-B1DD-F991373DFE07}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="BJJCompetitionInfo.exe" ComponentId="{96AD9FBC-650F-4430-A86C-8DB67418B6D2}" Directory_="APPDIR" Attributes="0" KeyPath="BJJCompetitionInfo.exe"/>
+    <ROW Component="BJJCompetitionInfo.exe.config" ComponentId="{C7FDD721-0C8A-421B-A00D-E39BFC53690F}" Directory_="APPDIR" Attributes="0" KeyPath="BJJCompetitionInfo.exe.config" Type="0"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{9456509B-249E-4216-BAB6-92B581C50035}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{DB305154-D744-4326-ADDC-41AA7BA855FF}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{7A8D8E1E-2E45-4AC1-ABBC-C1CDEBC49074}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{6A88B795-1762-4463-9B96-E8AC8568CF9B}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.Core.dll" ComponentId="{3201C463-16C2-41C5-B389-92691B9A83AF}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{1AB6B58A-C084-41D8-BA39-51AAF11318AA}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{8CAA00D4-4DD1-4BFA-96F7-CBE8A28A2423}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Deployment.dll" ComponentId="{AAAA4053-92D7-4ADE-842C-C245DE5A9F6E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{CAE84E18-5730-4D75-B2DA-72743B7B6BE1}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{979BF544-E12D-4FB5-A8B8-AB61D4781C33}" Directory_="APPDIR" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{F5B59993-366D-4BF4-A568-31E9D930F286}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{43180727-E2A4-42DE-9A65-B216AEFE3DA8}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{C14368DE-2084-44BC-AC4F-5729F64D4303}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{DACAD273-8142-4AF1-B0C6-B8450EA9EBA8}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{95982A9F-3B8C-49EA-9A9F-E00A7360E425}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="BJJCompetitionInfo.exe BJJCompetitionInfo.exe.config Microsoft.CSharp.dll Newtonsoft.Json.dll ProductInformation SHORTCUTDIR System.Core.dll System.Data.DataSetExtensions.dll System.Data.dll System.Deployment.dll System.Drawing.dll System.Net.Http.dll System.Windows.Forms.dll System.Xml.Linq.dll System.Xml.dll System.dll mscorlib.dll"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="BJJCompetitionInfo.exe" Component_="BJJCompetitionInfo.exe" FileName="BJJCOM~1.EXE|BJJCompetitionInfo.exe" Attributes="0" SourcePath="..\..\..\..\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe" SelfReg="false" NextFile="Microsoft.CSharp.dll" DigSign="true"/>
-    <ROW File="BJJCompetitionInfo.exe.config" Component_="BJJCompetitionInfo.exe.config" FileName="BJJCOM~1.CON|BJJCompetitionInfo.exe.config" Attributes="0" SourcePath="..\..\..\..\source\repos\BJJCompetitionInfo\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe.config" SelfReg="false" NextFile="mscorlib.dll"/>
+    <ROW File="BJJCompetitionInfo.exe" Component_="BJJCompetitionInfo.exe" FileName="BJJCOM~1.EXE|BJJCompetitionInfo.exe" Attributes="0" SourcePath="..\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe" SelfReg="false" NextFile="Newtonsoft.Json.dll" DigSign="true"/>
+    <ROW File="BJJCompetitionInfo.exe.config" Component_="BJJCompetitionInfo.exe.config" FileName="BJJCOM~1.CON|BJJCompetitionInfo.exe.config" Attributes="0" SourcePath="..\BJJCompetitionInfo\bin\Debug\BJJCompetitionInfo.exe.config" SelfReg="false" NextFile="mscorlib.dll"/>
     <ROW File="Microsoft.CSharp.dll" Component_="Microsoft.CSharp.dll" FileName="MICROS~1.DLL|Microsoft.CSharp.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll" SelfReg="false" NextFile="BJJCompetitionInfo.exe.config"/>
-    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\..\..\..\source\repos\BJJCompetitionInfo\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll" SelfReg="false" NextFile="System.Core.dll"/>
-    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~4.DLL|System.Core.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" SelfReg="false" NextFile="System.Data.dll"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll" SelfReg="false" NextFile="Microsoft.CSharp.dll"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~2.DLL|System.Core.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll" SelfReg="false" NextFile="System.Data.dll"/>
     <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="SYSTEM~1.DLL|System.Data.DataSetExtensions.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.DataSetExtensions.dll" SelfReg="false" NextFile="BJJCompetitionInfo.exe"/>
-    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~5.DLL|System.Data.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" SelfReg="false" NextFile="System.Drawing.dll"/>
-    <ROW File="System.Deployment.dll" Component_="System.Deployment.dll" FileName="SYSTEM~2.DLL|System.Deployment.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Deployment.dll" SelfReg="false" NextFile="System.Net.Http.dll"/>
-    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTEM~6.DLL|System.Drawing.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll" SelfReg="false" NextFile="System.Windows.Forms.dll"/>
-    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTEM~3.DLL|System.Net.Http.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" SelfReg="false" NextFile="Newtonsoft.Json.dll"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~3.DLL|System.Data.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.dll" SelfReg="false" NextFile="System.Deployment.dll"/>
+    <ROW File="System.Deployment.dll" Component_="System.Deployment.dll" FileName="SYSTEM~4.DLL|System.Deployment.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Deployment.dll" SelfReg="false" NextFile="System.Drawing.dll"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTEM~5.DLL|System.Drawing.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll" SelfReg="false" NextFile="System.Net.Http.dll"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTEM~6.DLL|System.Net.Http.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Net.Http.dll" SelfReg="false" NextFile="System.Windows.Forms.dll"/>
     <ROW File="System.Windows.Forms.dll" Component_="System.Windows.Forms.dll" FileName="SYSTEM~7.DLL|System.Windows.Forms.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Windows.Forms.dll" SelfReg="false" NextFile="System.Xml.dll"/>
     <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="SYSTEM~9.DLL|System.Xml.Linq.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.Linq.dll" SelfReg="false"/>
     <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTEM~8.DLL|System.Xml.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Xml.dll" SelfReg="false" NextFile="System.Xml.Linq.dll"/>
     <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll" SelfReg="false" NextFile="System.Data.DataSetExtensions.dll"/>
-    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" SelfReg="false" NextFile="System.Deployment.dll"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll" SelfReg="false" NextFile="System.Core.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" Languages="en" InstallationType="4" UseLargeSchema="true"/>

@@ -20,13 +20,15 @@ namespace BJJCompetitionInfo
             for (int i = year + 1; i > year - 5; i--)
                 cbYears.Items.Add(i);
             cbYears.SelectedIndex = 1;
-            comp = BJJComp.Load("BJJComps.json");
+            comp = BJJComp.Load(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"BJJComps.json"));
             lbEvents.DataSource = comp.Events;
             lbEvents.DisplayMember = "Name";
         }
        
         private void btnLoadEvents_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             string eventsString = getData("https://bjjcomp.com/lib/searchevents.php?q=" + cbYears.SelectedItem);
             string[] eventArray = eventsString.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
             comp.Events.Clear();
@@ -34,6 +36,8 @@ namespace BJJCompetitionInfo
             {
                 comp.Events.Add(new BJJEvent(evt));
             }
+
+            Cursor.Current = Cursors.Default;
         }
         string getData(string url)
         {
@@ -47,11 +51,13 @@ namespace BJJCompetitionInfo
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            comp.Save("BJJComps.json");
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "BJJComps.json");
         }
 
         private void btnGetCompetitors_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
+
             BJJEvent evt = (BJJEvent)lbEvents.SelectedItem;
 
             for (char c = 'a'; c <= 'z'; c++)
@@ -61,6 +67,9 @@ namespace BJJCompetitionInfo
             }
             lbCompetitors.DataSource = evt.Competitors.OrderBy(item => item.Name).ToList();
             lbCompetitors.DisplayMember = "DisplayName";
+            GetAllBrackets();
+
+            Cursor.Current = Cursors.Default;
         }
 
         string postData(string url, string data)
@@ -80,7 +89,7 @@ namespace BJJCompetitionInfo
             return s;
         }
         
-        private void btnGetAllBrackets_Click(object sender, EventArgs e)
+        public void GetAllBrackets()
         {
             BJJEvent evt = (BJJEvent)lbEvents.SelectedItem;
             foreach (BJJCompetitor competitor in evt.Competitors)
@@ -94,7 +103,8 @@ namespace BJJCompetitionInfo
 
         private void lbCompetitors_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lbCompetitorBrackets.DataSource = ((BJJCompetitor)lbCompetitors.SelectedItem).Brackets.ToList();
+            if (lbCompetitors.SelectedIndex>=0)
+                lbCompetitorBrackets.DataSource = ((BJJCompetitor)lbCompetitors.SelectedItem).Brackets.ToList();
         }
 
         private void lbEvents_SelectedIndexChanged(object sender, EventArgs e)

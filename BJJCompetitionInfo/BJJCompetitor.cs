@@ -28,7 +28,7 @@ namespace BJJCompetitionInfo
         }
         public BJJCompetitor()
         {
-
+            brackets = new compbracket();
         }
         public BJJCompetitor(string s)
         {
@@ -38,6 +38,7 @@ namespace BJJCompetitionInfo
             this.name = m.Groups["CompetitorName"].Value;
             this.academy = m.Groups["AcademyName"].Value;
             this.id = m.Groups["CompetitorID"].Value;
+            brackets = new compbracket();
         }
     }
 }
