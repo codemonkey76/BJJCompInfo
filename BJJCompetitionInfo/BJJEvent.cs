@@ -21,7 +21,26 @@ namespace BJJCompetitionInfo
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
+        public BindingList<string> GetAcademyList()
+        {
+            BindingList<string> academyList = new BindingList<string>();
+            foreach (BJJCompetitor competitor in Competitors)
+            {
+                if (!academyList.Contains(competitor.Academy))
+                    academyList.Add(competitor.Academy);                
+            }
+            return academyList;
+        }
+        public BindingList<BJJCompetitor> GetCompetitorsByAcademy(string Academy)
+        {
+            BindingList<BJJCompetitor> competitorList = new BindingList<BJJCompetitor>();
+            foreach (BJJCompetitor competitor in Competitors)
+            {
+                if (competitor.Academy==Academy)
+                    competitorList.Add(competitor);
+            }
+               return competitorList;
+        }
         string name;
         string id;
         string baseURL = "http://bjjcomp.com/";

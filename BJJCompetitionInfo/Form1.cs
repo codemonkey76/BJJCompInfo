@@ -67,6 +67,7 @@ namespace BJJCompetitionInfo
             }
             lbCompetitors.DataSource = evt.Competitors.OrderBy(item => item.Name).ToList();
             lbCompetitors.DisplayMember = "DisplayName";
+            lbAcademies.DataSource = evt.GetAcademyList();
             GetAllBrackets();
 
             Cursor.Current = Cursors.Default;
@@ -111,8 +112,10 @@ namespace BJJCompetitionInfo
         {
             if (lbEvents.SelectedIndex >= 0)
             {
-                lbCompetitors.DataSource = ((BJJEvent)lbEvents.SelectedItem).Competitors.OrderBy(item => item.Name).ToList();
+                BJJEvent evt = (BJJEvent)lbEvents.SelectedItem;
+                lbCompetitors.DataSource = evt.Competitors.OrderBy(item => item.Name).ToList();
                 lbCompetitors.DisplayMember = "DisplayName";
+                lbAcademies.DataSource = evt.GetAcademyList();
             }
                 
         }
@@ -131,6 +134,14 @@ namespace BJJCompetitionInfo
 
             lbCompetitorsInBracket.DataSource = filteredCompetitors;
             lbCompetitorsInBracket.DisplayMember = "Name";
+        }
+
+        private void lbAcademies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BJJEvent evt = (BJJEvent)lbEvents.SelectedItem;
+            
+            lbCompetitorsByAcademy.DataSource = evt.GetCompetitorsByAcademy((string)lbAcademies.SelectedItem);
+            lbCompetitorsByAcademy.DisplayMember = "DisplayName";
         }
     }
 }

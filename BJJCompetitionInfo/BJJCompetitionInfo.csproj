@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BJJAcademy.cs" />
     <Compile Include="BJJComp.cs" />
     <Compile Include="BJJCompetitor.cs" />
     <Compile Include="BJJEvent.cs" />

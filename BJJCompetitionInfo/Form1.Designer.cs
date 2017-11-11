@@ -40,6 +40,11 @@
             this.cbYears = new System.Windows.Forms.ComboBox();
             this.btnLoadEvents = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.lbAcademies = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbCompetitorsByAcademy = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblCompInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbEvents
@@ -150,11 +155,59 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Year";
             // 
+            // lbAcademies
+            // 
+            this.lbAcademies.FormattingEnabled = true;
+            this.lbAcademies.Location = new System.Drawing.Point(10, 364);
+            this.lbAcademies.Name = "lbAcademies";
+            this.lbAcademies.Size = new System.Drawing.Size(177, 173);
+            this.lbAcademies.TabIndex = 17;
+            this.lbAcademies.SelectedIndexChanged += new System.EventHandler(this.lbAcademies_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 348);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Academies";
+            // 
+            // lbCompetitorsByAcademy
+            // 
+            this.lbCompetitorsByAcademy.FormattingEnabled = true;
+            this.lbCompetitorsByAcademy.Location = new System.Drawing.Point(193, 364);
+            this.lbCompetitorsByAcademy.Name = "lbCompetitorsByAcademy";
+            this.lbCompetitorsByAcademy.Size = new System.Drawing.Size(166, 173);
+            this.lbCompetitorsByAcademy.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(190, 348);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(169, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Competitors for Selected Academy";
+            // 
+            // lblCompInfo
+            // 
+            this.lblCompInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCompInfo.Location = new System.Drawing.Point(377, 355);
+            this.lblCompInfo.Name = "lblCompInfo";
+            this.lblCompInfo.Size = new System.Drawing.Size(397, 181);
+            this.lblCompInfo.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 344);
+            this.ClientSize = new System.Drawing.Size(792, 544);
+            this.Controls.Add(this.lblCompInfo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbCompetitorsByAcademy);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbAcademies);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnLoadEvents);
             this.Controls.Add(this.cbYears);
@@ -189,6 +242,11 @@
         private System.Windows.Forms.ComboBox cbYears;
         private System.Windows.Forms.Button btnLoadEvents;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox lbAcademies;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox lbCompetitorsByAcademy;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblCompInfo;
     }
 }
 
